@@ -22,3 +22,5 @@ jobs:
       ${{ github.event_name == 'push' }}
     steps:
       - run: echo "This is a step to test workflow runs."
+      - run: echo ${{ github.event_name }}
+      - run: echo ${{ github.event.workflow_run.conclusion }}
