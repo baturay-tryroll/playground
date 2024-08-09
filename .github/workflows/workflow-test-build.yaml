@@ -10,5 +10,5 @@ jobs:
     name: Dummy
     runs-on: ubuntu-latest
     steps:
-      - run: echo "This is a dummy job."
-      # - run: exit 1
+      # - run: echo "This is a dummy job."
+      - run: exit 1
