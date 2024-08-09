@@ -1,0 +1,14 @@
+name: Workflow Run Build Test
+
+on:
+  push:
+    branches:
+      - workflow-fixes
+
+jobs:
+  dummy:
+    name: Dummy
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "This is a dummy job."
+      # - run: exit 1
