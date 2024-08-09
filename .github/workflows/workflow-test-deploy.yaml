@@ -17,9 +17,7 @@ jobs:
   test-success:
     name: Test success
     runs-on: ubuntu-latest
-    if: |
-      ( ${{ github.event_name == 'workflow_run' }} && ${{ github.event.workflow_run.conclusion == 'success' }} ) ||
-      ${{ github.event_name == 'push' }}
+    if: ( ${{ github.event_name == 'workflow_run' }} && ${{ github.event.workflow_run.conclusion == 'success' }} ) || ${{ github.event_name == 'push' }}
     steps:
       - run: echo "This is a step to test workflow runs."
       - run: echo ${{ github.event_name }}
