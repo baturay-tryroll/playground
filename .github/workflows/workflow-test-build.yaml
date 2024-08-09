@@ -3,7 +3,7 @@ name: Workflow Run Build Test
 on:
   push:
     branches:
-      - workflow-fixes
+      - main
 
 jobs:
   dummy:

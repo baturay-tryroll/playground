@@ -3,7 +3,7 @@ name: Workflow Run Deploy Test
 on:
   push:
     branches:
-      - workflow-fixes
+      - main
     paths:
       - devops/dummy.txt
 
